@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Auto Dealerships</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+        }
+
+        .contact-container {
+            width: 70%;
+            margin: 3% auto;
+            padding: 2%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3%;
+        }
+
+        .contact-header h3 {
+            color: darkturquoise;
+            font-size: 2.5em;
+        }
+
+        .contact-header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .contact-details {
+            padding: 2%;
+            border-radius: 10px;
+        }
+
+        .contact-details h5 {
+            color: darkturquoise;
+            margin-bottom: 1%;
+            font-size: 1.5em;
+        }
+
+        .contact-details p {
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .contact-info, .map {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3%;
+        }
+
+        .car-links img {
+            width: 252px;
+            margin: 0 1.5%;
+            margin-left:20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car-links img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Auto Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h3>Contact Us</h3>
+            <p>We’d love to hear from you! Reach out to us through any of the methods below.</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-details">
+                <h5>Email</h5>
+                <p>prashikm1999@gmail.com</p>
+
+                <h5>Phone</h5>
+                <p>+91-9604410124</p>
+
+                <h5>Address</h5>
+                <p>Vishwakarma Institute Of Technology<br>Bibwewadi, Pune</p>
+
+                <h5>Business Hours</h5>
+                <p>Monday - Friday: 9 AM - 6 PM<br>Saturday: 10 AM - 4 PM<br>Sunday: Closed</p>
+            </div>
+            
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.001234501508!2d-122.0842496846879!3d37.42206597982573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e8b87b8d67%3A0x504f535ebf0f0f40!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616701215281!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="car-links">
+            <a href="/cars/sedan">
+                <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sedan">
+            </a>
+            <a href="/cars/sedan">
+                <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sedan">
+            </a>
+            <a href="/cars/SUV">
+                <img src="https://images.pexels.com/photos/23230765/pexels-photo-23230765/free-photo-of-mercedes-benz-g-class-parked-on-the-side-of-a-street-in-a-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="SUV">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
